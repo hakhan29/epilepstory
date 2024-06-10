@@ -1,0 +1,436 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,p,h1,h2,h3,p,ul{margin: 0; padding: 0; font-family: GmarketSansMedium; }
+body{overflow-x: hidden;}
+
+.wrap{width: 1000px; margin: auto; padding-top: 20px; padding-bottom: 50px}
+.bg1{background: url(../img/bg/3p1.png); background-repeat: repeat; background-size: 15%}
+
+.container{width: 100%; margin: auto;}
+.box-container1 {width: 80%; margin: auto; display: flex; gap: 50px; 
+    line-height : 30px;font-size: 18px; text-align: center; margin-top: 50px}
+.box1 {background: white; color: black; padding-top: 90px; padding-bottom: 70px; padding-right:70px; padding-left:70px; 
+    width: 50%; height: 200px; border-radius: 10px; box-shadow: 0px 4px 10px black;}
+.box2 {background: white; color: black; padding-top: 110px; padding-bottom: 50px; padding-right:70px; padding-left:70px;
+    width: 50%; height: 200px;border-radius: 10px;box-shadow: 0px 4px 10px black;}
+
+.box-container2 {width: 80%; margin: auto; display: flex; gap: 50px; 
+    line-height : 30px;font-size: 18px; text-align: center; margin-top: 50px}
+.box3 {background: white; color: black; padding: 80px 70px; 
+    width: 50%; height: 200px; border-radius: 10px;box-shadow: 0px 4px 10px black;}
+.box4 {background: white; color: black; padding-top: 110px; padding-bottom: 50px; padding-right:70px; padding-left:70px;
+ width: 50%; height: 200px; border-radius: 10px;box-shadow: 0px 4px 10px black;}
+
+
+.container-1{position: absolute; width: 1000px; top: 151px; margin: auto;}
+.box-container1-1 {width: 80%; margin: auto; display: flex; gap: 50px; 
+    line-height : 50px;font-size: 35px; text-align: center; margin-top: 50px}
+.box1-1 {background: #5B3B90; color: white; padding: 80px 70px; width: 50%; height: 200px;border-radius: 10px;}
+.box1-1:hover {transition: all 0.3s; opacity: 0}
+.box2-1 {background: #5B3B90; color: white; padding: 80px 70px; width: 50%; height: 200px;border-radius: 10px;}
+.box2-1:hover {transition: all 0.3s; opacity: 0}
+
+.box-container2-1 {width: 80%; margin: auto; display: flex; gap: 50px; 
+    line-height : 50px;font-size: 35px; text-align: center; margin-top: 50px}
+.box3-1 {background: #5B3B90; color: white; padding: 80px 70px; width: 50%;height: 200px; border-radius: 10px}
+.box3-1:hover {transition: all 0.3s; opacity: 0}
+.box4-1 {background: #5B3B90; color: white; padding: 80px 70px; width: 50%; height: 200px; border-radius: 10px;}
+.box4-1:hover {transition: all 0.3s; opacity: 0}
+
+.num{background: white;color:#5B3B90;border-radius:50px; padding: 2px 2px; padding-top: 8px; width: 50%; margin: auto; margin-bottom: 20px;}
+
+
+.bounceinri{opacity: 0;animation: bounce-inri 0.7s forwards;}
+        
+       @keyframes bounce-inri {
+    0% {
+        transform: translate(200px, 50px) scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        transform: translate(0, -20px) scale(1);
+        opacity: 1;
+    }
+    80% {
+        transform: translate(10px, 5px) scale(0.95);
+    }
+    100% {
+        transform: translate(0, 0) scale(1);
+    opacity: 1}}
+
+.bounceinle{;animation: bounce-inle 0.7s forwards;}
+        
+       @keyframes bounce-inle {
+    0% {
+        transform: translate(-200px, 50px) scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        transform: translate(0, -20px) scale(1);
+        opacity: 1;
+    }
+    80% {
+        transform: translate(-10px, 5px) scale(0.95);
+    }
+    100% {
+        transform: translate(0, 0) scale(1);
+    =}
+}
+
+
+    .bouncein1{transform: scale(0);animation: bounce-in 0.7s forwards; animation-delay: 0.8s}
+    .bouncein2{transform: scale(0);animation: bounce-in 0.7s forwards; animation-delay: 1.1s}
+    .bouncein3{transform: scale(0);animation: bounce-in 0.7s forwards; animation-delay: 1.4s}
+    .bouncein4{transform: scale(0);animation: bounce-in 0.7s forwards; animation-delay: 1.7s}
+        
+       @keyframes bounce-in {
+    0% {
+        transform:  scale(0);
+        
+    }
+    50% {
+        transform:  scale(1);
+      
+    }
+    80% {
+        transform:  scale(0.95);
+    }
+    100% {
+        transform:  scale(1);
+      
+    }
+}
+
+.chat-container {
+    font-family: GmarketSansMedium;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 80px; margin-bottom: 50px;
+}
+.chat-container1 {
+    font-family: GmarketSansMedium;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 200px; margin-bottom: 50px;
+
+}
+
+
+.chat-bubble {
+    position: relative;
+    padding: 13px 20px;
+    border-radius: 20px;
+    max-width: 50%;
+    color: #000000;
+    font-size: 18px;
+    line-height: 1.4;
+    z-index: 2;
+}
+
+.chat-bubble.left {
+    background: #FFFFFF;
+    align-self: flex-start;
+}
+
+.chat-bubble.left::after {
+    content: "";
+    position: absolute;
+    top: 70%;
+    left: -7px;
+    transform: translateY(-50%);
+    border: 10px solid transparent;
+    border-right-color: #FFFFFF;
+    border-left: 0;
+    margin-top: -4px;
+}
+
+.chat-bubble.right {
+    background: #FFDC5E;
+    align-self: flex-end;
+}
+
+.chat-bubble.right::after {
+    content: "";
+    position: absolute;
+    top: 70%;
+    right: -7px;
+    transform: translateY(-50%);
+    border: 10px solid transparent;
+    border-left-color: #FFDC5E;
+    border-right: 0;
+    margin-top: -4px;
+}
+
+
+
+
+
+
+
+.bg2 {position:relative;background: linear-gradient(rgba(90, 52, 153, 0), rgba(90, 52, 153, 1) 16%, rgba(39, 15, 79, 1.0) 58%, rgba(90, 52, 153, 1) 87%, rgba(90, 52, 153, 0) 100%) ;
+ margin-top: -300px; margin-bottom: -300px; z-index: 1}
+
+.chat-container2 {
+    font-family: GmarketSansMedium;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.chat-bubbleeve {
+    position: relative;
+    padding: 20px 30px;
+    border-radius: 30px;
+    max-width: 60%;
+    color: #000000;
+    font-size: 40px;
+    font-weight: 1000;
+    line-height: 1.4;
+    margin-top: 400px;
+}
+.chat-bubbleeve.right {
+    background: #FFDC5E;
+    align-self: flex-end;
+}
+
+.chat-bubbleeve.right::after {
+    content: "";
+    position: absolute;
+    top: 70%;
+    right: -7px;
+    transform: translateY(-50%);
+    border: 10px solid transparent;
+    border-left-color: #FFDC5E;
+    border-right: 0;
+    margin-top: -4px;
+}
+
+.howto{width: 100%; margin-bottom: 300px}
+.howtobox-container{width: 80%; margin: auto;display: flex; gap: 50px; text-align: center; font-size: 18px; margin-top: 50px}
+.howtobox{background: white; color: black; width: 30%; margin-top: 20px; border-radius: 10px; padding: 15px 25px}
+.howtobox img{width: 90%}
+
+
+.comeup1{opacity: 0;animation: up 0.5s forwards;}
+        
+       @keyframes up {
+    0% {
+        transform: translate(0px, 200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0, 0px);
+        opacity: 1;
+    }
+    }
+
+.comeup2{opacity: 0;animation: up 0.5s forwards; animation-delay: 0.1s}
+        
+       @keyframes up {
+    0% {
+        transform: translate(0px, 200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0, 0px);
+        opacity: 1;
+    }
+    }
+
+.comeup3{opacity: 0;animation: up 0.5s forwards; animation-delay: 0.2s}
+        
+       @keyframes up {
+    0% {
+        transform: translate(0px, 200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0, 0px);
+        opacity: 1;
+    }
+    }
+
+.comeup4{opacity: 0;animation: up 0.5s forwards;}
+        
+       @keyframes up {
+    0% {
+        transform: translate(0px, 200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0, 0px);
+        opacity: 1;
+    }
+    }
+
+.comeup5{opacity: 0;animation: up 0.5s forwards; animation-delay: 0.1s}
+        
+       @keyframes up {
+    0% {
+        transform: translate(0px, 200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0, 0px);
+        opacity: 1;
+    }
+    }
+
+.comeup6{opacity: 0;animation: up 0.5s forwards; animation-delay: 0.2s}
+        
+       @keyframes up {
+    0% {
+        transform: translate(0px, 200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0, 0px);
+        opacity: 1;
+    }
+    }
+
+
+.chat-bubbleeve1 {
+    position: relative;
+    padding: 20px 30px;
+    border-radius: 30px;
+    max-width: 60%;
+    color: #000000;
+    font-size: 40px;
+    font-weight: 1000;
+    line-height: 1.4;
+    margin-top: 150px;
+    z-index: 2;
+}
+.chat-bubbleeve1.right {
+    background: #FFDC5E;
+    align-self: flex-end;
+}
+
+.chat-bubbleeve1.right::after {
+    content: "";
+    position: absolute;
+    top: 70%;
+    right: -7px;
+    transform: translateY(-50%);
+    border: 10px solid transparent;
+    border-left-color: #FFDC5E;
+    border-right: 0;
+    margin-top: -4px;
+}
+
+
+.bg3{position:relative;background: url(../img/bg/3p2.png); background-repeat: repeat; background-size: 20%}
+
+.what{width: 100%; margin-bottom: 100px; margin-top: 100px}
+.what-container{width: 80%; display: flex; gap: 50px; text-align: center; 
+    font-size: 19px;line-height:30px;;margin: auto; margin-top: 10px; padding-top: 20px}
+.what-box{width: 50%; height: 240px; border-radius: 300px; padding:60px; padding-top: 70px; 
+    background: white; color: #311068; box-shadow: 0px 4px 10px black;}
+
+.what1{position:absolute;width: 1000px; margin: auto; top: 593px;}
+.what-container1{width: 80%; display: flex; gap: 50px; text-align: center; 
+    font-size: 19px;line-height:30px;;margin: auto; margin-top: 10px; padding-top: 20px}
+.what-box-1{width: 50%; height: 240px; border-radius: 300px; padding:60px; padding-top: 70px; 
+    background: rgba(49, 16, 104, 0.8); color: white; }
+.what-box-1 img{width: 90%}
+.what-box-1:hover{transition: all 0.3s;opacity: 0}
+
+
+
+
+
+.comeleft{animation: left 0.8s forwards;}
+        
+       @keyframes left {
+    0% {
+        transform: translate(-700px, 0px);
+    
+    }
+
+
+    60% {
+        transform: translate(20px, 0px);
+    }
+
+    80% {
+        transform: translate(-10px, 0px);}
+
+    100% {
+        transform: translate(0, 0px);
+    
+    }
+    }
+
+.comeright{animation: right 0.8s forwards;}
+        
+       @keyframes right {
+    0% {
+        transform: translate(700px, 0px);
+    
+    }
+
+
+    60% {
+        transform: translate(-20px, 0px);
+    }
+
+    80% {
+        transform: translate(10px, 0px);}
+
+    100% {
+        transform: translate(0, 0px);
+    
+    }
+    }
+
+.bg4{background: url(../img/bg/3p3.png); background-size: cover; background-attachment: fixed;}
+.end{width: 100%; margin: auto;margin-top: 50px; background: rgba(255, 255, 255, 0.5); padding: 20px}
+.endti{background: white; color: black; font-size: 35px; text-align: center; font-weight: 700;
+    padding: 30px;border-radius: 30px; width: 70%; margin: auto; margin-top: 50px; margin-bottom: 50px}
+
+.end1{width: 80%; margin: auto;font-size: 20px; text-align: center; line-height: 40px; }
+.end1 p{margin-top: 20px}
+
+.end2{width: 80%; margin: auto; font-size: 40px; text-align: center; line-height: 60px; font-weight: 700;
+    margin-top: 30px; margin-bottom: 50px;padding: 20px; color: #311068; text-shadow: 0px 4px 0px white;}
+
+.bgani{animation: bg4 0.7s forwards;}
+@keyframes bg4 {
+    0%{ opacity: 0}
+    100%{ opacity: 1}
+}
+
+.bounceinen{transform: scale(0);animation: bounce-in 0.7s forwards}
+.bounceinen1{transform: scale(0);animation: bounce-in 0.7s forwards; animation-delay: 0.3s}
+.bounceinen2{transform: scale(0);animation: bounce-in 0.7s forwards; animation-delay: 0.5s}
+.bounceinen3{transform: scale(0);animation: bounce-in 0.7s forwards; animation-delay: 0.5s}
+
+.click{position: relative;text-align: center; padding: 50px; padding-top: 100px; color: #311068; font-size: 20px; z-index: 1}
+.click a{text-decoration: none; color: #311068;}
+
+.fadein{opacity: 0;animation: fadein 0.5s forwards; animation-delay: 1s}
+
+@keyframes fadein{
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+
+.footer{background: #311068; color: white; padding: 30px}
+.footer h2{font-size: 20px; margin-bottom: 50px; margin-top: 40px}
+.footer p{font-size: 12px; line-height: 25px}
+

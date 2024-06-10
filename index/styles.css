@@ -1,0 +1,241 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,p,h1,h2,h3,p,ul{margin: 0; padding: 0}
+        body{background: #5B3B90; color: white;}
+
+.bg{background: url(../img/bg/4.png); background-repeat: repeat; background-size: 15%;}
+
+.wrap{width: 1000px; margin: auto; padding-top: 20px; padding-bottom: 50px}
+.click{text-align: center; padding: 50px; font-size: 20px}
+.click a{text-decoration: none; color: white;}
+
+.fadein{opacity: 0;animation: fadein 0.5s forwards; animation-delay: 2s}
+
+
+@keyframes fadein{
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+.bouncein{animation: bounce-in 0.7s forwards;}
+        
+       @keyframes bounce-in {
+    0% {
+        transform: translate(-200px, 50px) scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        transform: translate(0, -20px) scale(1);
+        opacity: 1;
+    }
+    80% {
+        transform: translate(-10px, 5px) scale(0.95);
+    }
+    100% {
+        transform: translate(0, 0) scale(1);
+    }
+}
+.bounceinri{opacity: 0;animation: bounce-inri 0.7s forwards; animation-delay: 0.5s}
+        
+       @keyframes bounce-inri {
+    0% {
+        transform: translate(200px, 50px) scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        transform: translate(0, -20px) scale(1);
+        opacity: 1;
+    }
+    80% {
+        transform: translate(10px, 5px) scale(0.95);
+    }
+    100% {
+        transform: translate(0, 0) scale(1);
+    opacity: 1}
+}
+
+.bounceinde1{opacity:0 ;animation: bounce-inde1 0.7s forwards; animation-delay: 1s}
+        
+       @keyframes bounce-inde1 {
+    0% {
+        transform: translate(200px, 50px) scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        transform: translate(0, -20px) scale(1);
+        opacity: 1;
+    }
+    80% {
+        transform: translate(-10px, 5px) scale(0.95);
+    }
+    100% {
+        transform: translate(0, 0) scale(1); opacity: 1;
+    }
+}
+
+
+.bounceinde2{opacity:0 ;animation: bounce-inde2 0.7s forwards; animation-delay: 2s}
+        
+       @keyframes bounce-inde2 {
+    0% {
+        transform: translate(-200px, 50px) scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        transform: translate(0, -20px) scale(1);
+        opacity: 1;
+    }
+    80% {
+        transform: translate(-10px, 5px) scale(0.95);
+    }
+    100% {
+        transform: translate(0, 0) scale(1); opacity: 1;
+    }
+}
+
+.bounceinde3{opacity:0 ;animation: bounce-inde3 0.7s forwards; animation-delay: 3s}
+        
+       @keyframes bounce-inde3 {
+    0% {
+        transform: translate(-200px, 50px) scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        transform: translate(0, -20px) scale(1);
+        opacity: 1;
+    }
+    80% {
+        transform: translate(-10px, 5px) scale(0.95);
+    }
+    100% {
+        transform: translate(0, 0) scale(1); opacity: 1;
+    }
+}
+
+.bounceinde4{opacity:0 ;animation: bounce-inde4 0.7s forwards; animation-delay: 3.5s}
+        
+       @keyframes bounce-inde4 {
+    0% {
+        transform: translate(-200px, 50px) scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        transform: translate(0, -20px) scale(1);
+        opacity: 1;
+    }
+    80% {
+        transform: translate(-10px, 5px) scale(0.95);
+    }
+    100% {
+        transform: translate(0, 0) scale(1); opacity: 1;
+    }
+}
+
+.bounceinde5{opacity:0 ;animation: bounce-inde5 0.7s forwards; animation-delay: 4.5s}
+        
+       @keyframes bounce-inde5 {
+    0% {
+        transform: translate(200px, 50px) scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        transform: translate(0, -20px) scale(1);
+        opacity: 1;
+    }
+    80% {
+        transform: translate(10px, 5px) scale(0.95);
+    }
+    100% {
+        transform: translate(0, 0) scale(1); opacity: 1;
+    }
+}
+
+.chat-container {
+    font-family: GmarketSansMedium;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 80px; margin-bottom: 50px;
+}
+
+.chat-bubble {
+    position: relative;
+    padding: 13px 20px;
+    border-radius: 20px;
+    max-width: 50%;
+    color: #000000;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.chat-bubble.left {
+    background: #FFFFFF;
+    align-self: flex-start;
+}
+
+.chat-bubble.left::after {
+    content: "";
+    position: absolute;
+    top: 70%;
+    left: -7px;
+    transform: translateY(-50%);
+    border: 10px solid transparent;
+    border-right-color: #FFFFFF;
+    border-left: 0;
+    margin-top: -4px;
+}
+
+.chat-bubble.right {
+    background: #FFDC5E;
+    align-self: flex-end;
+}
+
+.chat-bubble.right::after {
+    content: "";
+    position: absolute;
+    top: 70%;
+    right: -7px;
+    transform: translateY(-50%);
+    border: 10px solid transparent;
+    border-left-color: #FFDC5E;
+    border-right: 0;
+    margin-top: -4px;
+}
+
+.chat-bubblefin {
+    position: relative;
+    padding: 15px 25px;
+    border-radius: 25px;
+    max-width: 60%;
+    color: #000000;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+.chat-bubblefin.right {
+    background: #FFDC5E;
+    align-self: flex-end;
+}
+
+.chat-bubblefin.right::after {
+    content: "";
+    position: absolute;
+    top: 70%;
+    right: -7px;
+    transform: translateY(-50%);
+    border: 10px solid transparent;
+    border-left-color: #FFDC5E;
+    border-right: 0;
+    margin-top: -4px;
+}
+
+.gif {width: 40%}
+
+
